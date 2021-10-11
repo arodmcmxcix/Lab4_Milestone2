@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_ulyly" />
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:text="Location 101"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lati"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="49dp"
+        android:text="Latitude: "
+        app:layout_constraintBottom_toTopOf="@+id/longi"
+        app:layout_constraintEnd_toEndOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/heading" />
+
+    <TextView
+        android:id="@+id/longi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:text="Longitude: "
+        app:layout_constraintBottom_toTopOf="@+id/address"
+        app:layout_constraintStart_toStartOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/lati" />
+
+    <TextView
+        android:id="@+id/accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="34dp"
+        android:text="Accuracy: "
+        app:layout_constraintBottom_toTopOf="@+id/altitude"
+        app:layout_constraintStart_toStartOf="@+id/altitude"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <TextView
+        android:id="@+id/altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="289dp"
+        android:text="Altitude: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accuracy" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="40dp"
+        android:text="Address: "
+        app:layout_constraintBottom_toTopOf="@+id/accuracy"
+        app:layout_constraintEnd_toEndOf="@+id/accuracy"
+        app:layout_constraintTop_toBottomOf="@+id/longi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
